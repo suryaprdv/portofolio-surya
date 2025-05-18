@@ -826,37 +826,60 @@ body {
       .nav-list.active {
         display: flex;
       }
-   /* Container untuk judul dan tombol */
+   /* Layout header */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
 }
 
-/* Tombol garis 3 */
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Tombol menu (garis 3) */
 .menu-toggle {
   display: none;
   font-size: 24px;
   background: none;
   border: none;
+  color: white;
   cursor: pointer;
 }
 
-/* Munculkan tombol hanya di layar kecil */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+/* Navigasi default */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  background-color: #003366;
+}
 
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+/* Responsif: tampilan mobile */
+@media (max-width: 768px) {
   .nav-list {
     display: none;
     flex-direction: column;
-    margin-top: 10px;
   }
 
   .nav-list.active {
     display: flex;
   }
-}
 
+  .menu-toggle {
+    display: block;
+  }
+}
 
