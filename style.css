@@ -856,8 +856,9 @@ body {
     position: absolute;
     background: #333;
     width: 100%;
-    top: 60px;
+    top: 100%; /* ✅ biar nempel langsung di bawah header */
     left: 0;
+    z-index: 1000;
   }
 
   .nav-list.active {
