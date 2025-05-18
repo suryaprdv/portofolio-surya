@@ -822,6 +822,7 @@ body {
   /* Header container untuk menyatukan judul dan hamburger */
 /* Header container untuk menyatukan judul dan tombol hamburger */
 .header-container {
+  position: relative; /* ✅ penting agar nav-list posisinya relatif ke header */
   display: flex;
   justify-content: space-between;
   align-items: center; /* BIAR SEJAJAR VERTIKAL */
