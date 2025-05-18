@@ -826,46 +826,38 @@ body {
       .nav-list.active {
         display: flex;
       }
-  /* Reset beberapa margin dan padding standar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Style untuk header */
+  /* Header style */
 header {
   display: flex;
   justify-content: space-between; /* Menjaga jarak antara judul dan menu */
-  align-items: center; /* Menjaga elemen sejajar secara vertikal */
+  align-items: center; /* Menjaga agar elemen sejajar secara vertikal */
   padding: 10px 20px;
   background-color: #333;
   color: white;
 }
 
-/* Style untuk judul */
+/* Judul header */
 header h1 {
   font-size: 24px;
   margin: 0;
-  flex-grow: 1; /* Menjaga judul tetap berada di kiri */
 }
 
-/* Style untuk menu-toggle (garis tiga) */
+/* Tombol hamburger */
 .menu-toggle {
   font-size: 30px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-  display: none; /* Sembunyikan tombol hamburger di layar besar */
+  display: none; /* Sembunyikan tombol di layar besar */
 }
 
-/* Style untuk navigasi */
+/* Menu navigasi */
 nav {
-  display: flex; /* Mengatur menu agar sejajar */
+  display: flex;
 }
 
-/* Style untuk daftar menu */
+/* Menu list */
 .nav-list {
   list-style-type: none;
   display: flex;
@@ -876,27 +868,24 @@ nav {
   padding: 10px;
 }
 
-/* Tampilan responsif untuk perangkat dengan lebar layar kurang dari 768px */
+/* Responsif untuk tampilan kecil */
 @media (max-width: 768px) {
-  /* Menyembunyikan menu secara default di layar kecil */
   .nav-list {
-    display: none;
-    width: 100%;
+    display: none; /* Sembunyikan menu secara default */
     flex-direction: column;
     position: absolute;
     top: 60px;
     right: 0;
     background-color: #333;
+    width: 100%;
     padding: 10px;
   }
 
-  /* Menampilkan tombol menu hamburger di layar kecil */
   .menu-toggle {
-    display: block;
+    display: block; /* Menampilkan tombol hamburger di layar kecil */
   }
 
-  /* Menampilkan menu ketika tombol diklik */
   .nav-list.active {
-    display: flex;
+    display: flex; /* Menampilkan menu saat tombol diklik */
   }
 }
