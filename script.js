@@ -1,16 +1,8 @@
-// JavaScript untuk Tombol Hamburger
-const mobileMenu = document.getElementById('mobile-menu');
+// Mengambil elemen tombol menu dan daftar navigasi
+const menuToggle = document.getElementById('menu-toggle');
 const navList = document.querySelector('.nav-list');
 
-mobileMenu.addEventListener('click', () => {
+// Menambahkan event listener untuk toggle menu saat tombol diklik
+menuToggle.addEventListener('click', () => {
   navList.classList.toggle('active');
 });
-
-
-  const toggleBtn = document.getElementById('menu-toggle');
-  const navList = document.getElementById('nav-list');
-
-  toggleBtn.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  });
-
