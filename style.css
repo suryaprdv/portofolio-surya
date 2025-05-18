@@ -826,60 +826,82 @@ body {
       .nav-list.active {
         display: flex;
       }
-   /* Layout header */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #003366;
-  color: white;
-  padding: 10px 20px;
-}
-
-h1 {
+   /* Reset beberapa margin dan padding standar */
+* {
   margin: 0;
-  font-size: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Tombol menu (garis 3) */
-.menu-toggle {
-  display: none;
+/* Style untuk header */
+header {
+  display: flex;
+  justify-content: space-between; /* Menjaga jarak antara judul dan menu */
+  align-items: center; /* Menjaga elemen sejajar secara vertikal */
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Style untuk judul */
+header h1 {
   font-size: 24px;
+}
+
+/* Style untuk menu-toggle (garis tiga) */
+.menu-toggle {
+  font-size: 30px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
 }
 
-/* Navigasi default */
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-  background-color: #003366;
+/* Style untuk navigasi */
+nav {
+  display: none; /* Sembunyikan menu di perangkat mobile */
 }
 
-.nav-list li a {
-  text-decoration: none;
-  color: white;
+/* Style untuk daftar menu */
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
   padding: 10px;
 }
 
-/* Responsif: tampilan mobile */
+/* Menampilkan menu ketika tombol menu-toggle diklik */
+.nav-list.active {
+  display: flex;
+  flex-direction: column; /* Atur menu menjadi kolom */
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #333;
+  width: 200px;
+  padding: 10px;
+}
+
+/* Tampilan responsif untuk perangkat dengan lebar layar kurang dari 768px */
 @media (max-width: 768px) {
   .nav-list {
-    display: none;
-    flex-direction: column;
-  }
-
-  .nav-list.active {
-    display: flex;
+    display: none; /* Sembunyikan menu di layar kecil */
   }
 
   .menu-toggle {
-    display: block;
+    display: block; /* Menampilkan tombol menu */
+  }
+
+  header {
+    justify-content: space-between; /* Menjaga jarak antara logo dan menu */
+  }
+
+  /* Menampilkan menu ketika tombol di klik */
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
   }
 }
-
