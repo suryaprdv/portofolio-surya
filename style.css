@@ -826,7 +826,7 @@ body {
       .nav-list.active {
         display: flex;
       }
-   /* Reset beberapa margin dan padding standar */
+  /* Reset beberapa margin dan padding standar */
 * {
   margin: 0;
   padding: 0;
@@ -846,6 +846,8 @@ header {
 /* Style untuk judul */
 header h1 {
   font-size: 24px;
+  margin: 0;
+  flex-grow: 1; /* Menjaga judul tetap berada di kiri */
 }
 
 /* Style untuk menu-toggle (garis tiga) */
@@ -855,11 +857,12 @@ header h1 {
   border: none;
   color: white;
   cursor: pointer;
+  display: none; /* Sembunyikan tombol hamburger di layar besar */
 }
 
 /* Style untuk navigasi */
 nav {
-  display: none; /* Sembunyikan menu di perangkat mobile */
+  display: flex; /* Mengatur menu agar sejajar */
 }
 
 /* Style untuk daftar menu */
@@ -873,35 +876,27 @@ nav {
   padding: 10px;
 }
 
-/* Menampilkan menu ketika tombol menu-toggle diklik */
-.nav-list.active {
-  display: flex;
-  flex-direction: column; /* Atur menu menjadi kolom */
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: #333;
-  width: 200px;
-  padding: 10px;
-}
-
 /* Tampilan responsif untuk perangkat dengan lebar layar kurang dari 768px */
 @media (max-width: 768px) {
+  /* Menyembunyikan menu secara default di layar kecil */
   .nav-list {
-    display: none; /* Sembunyikan menu di layar kecil */
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
   }
 
+  /* Menampilkan tombol menu hamburger di layar kecil */
   .menu-toggle {
-    display: block; /* Menampilkan tombol menu */
+    display: block;
   }
 
-  header {
-    justify-content: space-between; /* Menjaga jarak antara logo dan menu */
-  }
-
-  /* Menampilkan menu ketika tombol di klik */
+  /* Menampilkan menu ketika tombol diklik */
   .nav-list.active {
     display: flex;
-    flex-direction: column;
   }
 }
