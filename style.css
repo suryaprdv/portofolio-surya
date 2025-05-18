@@ -820,10 +820,11 @@ body {
         display: flex;
       }
   /* Header container untuk menyatukan judul dan hamburger */
+/* Header container untuk menyatukan judul dan tombol hamburger */
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* INI PENTING biar SEJAJAR VERTIKAL */
+  align-items: center; /* BIAR SEJAJAR VERTIKAL */
   padding: 10px 20px;
   background-color: #333;
   color: white;
@@ -842,7 +843,10 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+  margin: 0; /* PENTING: pastikan gak ada margin */
+  padding: 0;
 }
+
 
 /* Responsive (opsional kalau pakai menu toggle) */
 @media (max-width: 768px) {
