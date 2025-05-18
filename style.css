@@ -848,7 +848,6 @@ body {
 }
 
 
-/* Responsive (opsional kalau pakai menu toggle) */
 @media (max-width: 768px) {
   .nav-list {
     display: none;
