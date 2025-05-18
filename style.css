@@ -39,6 +39,7 @@ header {
 header h1 {
   margin-bottom: 10px;
   font-size: 2rem;
+  padding: 10px 0px 10px 10px;
 }
 
 /* Navigation */
@@ -826,7 +827,6 @@ body {
   align-items: center;
   background-color: #333;
   color: white;
-   padding: 10px 0px 10px 10px;
   position: relative;
 }
 
