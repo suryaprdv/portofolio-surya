@@ -845,6 +845,7 @@ body {
   cursor: pointer;
   margin: 0; /* PENTING: pastikan gak ada margin */
   padding: 0;
+   transform: translateY(-2px); /* Naikin dikit */
 }
 
 
