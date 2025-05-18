@@ -39,7 +39,7 @@ header {
 header h1 {
   margin-bottom: 10px;
   font-size: 2rem;
-  padding: 10px 0px 10px 10px;
+  
 }
 
 /* Navigation */
@@ -834,8 +834,6 @@ body {
 .site-title {
   font-size: 20px;
   margin: 0;
-  padding: 0;
-  text-align: left;
 }
 
 /* Hamburger Menu Button */
