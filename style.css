@@ -846,7 +846,7 @@ body {
   cursor: pointer;
   margin: 0; /* PENTING: pastikan gak ada margin */
   padding: 0;
-   transform: translateY(-2px); /* Naikin dikit */
+   transform: translateY(-3px); /* Naikin dikit */
 }
 
 
@@ -861,7 +861,10 @@ body {
     left: 0;
     z-index: 1000;
   }
-
+.nav-list li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
   .nav-list.active {
     display: flex;
   }
