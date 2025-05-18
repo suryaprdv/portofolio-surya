@@ -823,10 +823,11 @@ body {
  /* Header Flex Container */
 .header-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: white;
+  padding: 10px 20px;
   position: relative;
 }
 
@@ -845,7 +846,7 @@ body {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  transform: translateY(-4px); /* sejajarkan */
+  transform: translateY(-2px); /* sejajarkan */
 }
 
 /* Nav List (hidden by default) */
