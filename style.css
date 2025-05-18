@@ -820,7 +820,7 @@ body {
       .nav-list.active {
         display: flex;
       }
- /* Header Flex Container */
+/* Header wrapper */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -829,16 +829,17 @@ body {
   color: white;
   padding: 10px 20px;
   position: relative;
-   align-self: center;
+  z-index: 2;
 }
 
 /* Judul */
-.site-title {
+.header-container h1 {
   font-size: 20px;
   margin: 0;
+  text-align: left;
 }
 
-/* Hamburger Menu Button */
+/* Tombol Hamburger */
 .menu-toggle {
   font-size: 28px;
   background: none;
@@ -847,54 +848,29 @@ body {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  transform: translateY(-4px); /* sejajarkan */
+  line-height: 1;
 }
 
-/* Nav List (hidden by default) */
-.nav-list {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%; /* langsung di bawah header */
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  z-index: 1000;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Show nav when active */
-.nav-list.active {
+/* Nav default desktop */
+nav .nav-list {
   display: flex;
+  gap: 20px;
 }
 
-/* List items */
-.nav-list li {
-  padding: 12px 20px;
-  border-bottom: 1px solid #555;
-}
-
-.nav-list li a {
-  color: white;
-  text-decoration: none;
-}
-
-@media (min-width: 769px) {
-  .menu-toggle {
+/* Nav responsive (HP) */
+@media (max-width: 768px) {
+  nav .nav-list {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #333;
+    top: 60px; /* naikkan agar tidak ketutup gambar */
+    left: 0;
+    width: 100%;
+    z-index: 5;
   }
 
-  .nav-list {
-    position: static;
-    display: flex !important;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .nav-list li {
-    border: none;
-    padding: 10px 15px;
+  nav .nav-list.active {
+    display: flex;
   }
 }
