@@ -819,53 +819,80 @@ body {
       .nav-list.active {
         display: flex;
       }
-  /* Header container untuk menyatukan judul dan hamburger */
-/* Header container untuk menyatukan judul dan tombol hamburger */
+ /* Header Flex Container */
 .header-container {
-  position: relative; /* ✅ penting agar nav-list posisinya relatif ke header */
   display: flex;
   justify-content: space-between;
-  align-items: center; /* BIAR SEJAJAR VERTIKAL */
-  padding: 10px 20px;
+  align-items: center;
   background-color: #333;
   color: white;
+  padding: 10px 20px;
+  position: relative;
 }
 
 /* Judul */
-.header-container h1 {
+.site-title {
   font-size: 20px;
   margin: 0;
 }
 
-/* Tombol hamburger */
+/* Hamburger Menu Button */
 .menu-toggle {
   font-size: 28px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-  margin: 0; /* PENTING: pastikan gak ada margin */
   padding: 0;
-   transform: translateY(-3px); /* Naikin dikit */
+  margin: 0;
+  transform: translateY(-4px); /* sejajarkan */
 }
 
+/* Nav List (hidden by default) */
+.nav-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%; /* langsung di bawah header */
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-@media (max-width: 768px) {
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background: #333;
-    width: 100%;
-    top: 100%; /* ✅ biar nempel langsung di bawah header */
-    left: 0;
-    z-index: 1000;
-  }
+/* Show nav when active */
+.nav-list.active {
+  display: flex;
+}
+
+/* List items */
 .nav-list li {
-  padding: 10px;
+  padding: 12px 20px;
   border-bottom: 1px solid #555;
 }
-  .nav-list.active {
-    display: flex;
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-list {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-list li {
+    border: none;
+    padding: 10px 15px;
   }
 }
