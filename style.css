@@ -755,14 +755,7 @@ body {
         display: flex;
       }
 
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - My Portofolio</title>
-  <style>
-    body {
+      
       margin: 0;
       font-family: Arial, sans-serif;
     }
@@ -837,7 +830,7 @@ header1 {
 }
 
 /* Judul header */
-header h1- {
+header h1 {
   font-size: 24px;
   margin: 0;
 }
