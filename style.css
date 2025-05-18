@@ -819,84 +819,44 @@ body {
       .nav-list.active {
         display: flex;
       }
-  /* Style untuk header */
-header1 {
+  /* Header container untuk menyatukan judul dan hamburger */
+.header-container {
   display: flex;
-  justify-content: space-between; /* Menyusun elemen header agar ada jarak antara judul dan tombol hamburger */
-  align-items: center; /* Agar judul dan tombol hamburger sejajar secara vertikal */
+  justify-content: space-between;
+  align-items: center; /* INI PENTING biar SEJAJAR VERTIKAL */
   padding: 10px 20px;
   background-color: #333;
   color: white;
 }
 
-/* Judul header */
-header h1 {
-  font-size: 24px;
+/* Judul */
+.header-container h1 {
+  font-size: 20px;
   margin: 0;
 }
 
 /* Tombol hamburger */
 .menu-toggle {
-  font-size: 30px;
+  font-size: 28px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-  display: none; /* Tombol hanya muncul di layar kecil */
 }
 
-/* Style untuk menu navigasi */
-nav1 {
-  display: flex;
-}
-
-/* Menu list */
-.nav-list1 {
-  list-style-type: none;
-  display: flex; /* Menu akan ditampilkan secara horizontal untuk layar besar */
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-/* Item menu */
-.nav-list1 li {
-  padding: 10px;
-}
-
-/* Style untuk tampilan responsive */
+/* Responsive (opsional kalau pakai menu toggle) */
 @media (max-width: 768px) {
-  /* Menyembunyikan menu di layar kecil */
   .nav-list {
     display: none;
-    flex-direction: column; /* Menu menjadi vertikal */
+    flex-direction: column;
     position: absolute;
-    top: 60px; /* Posisi menu setelah header */
-    right: 0;
-    background-color: #333;
+    background: #333;
     width: 100%;
-    padding: 10px;
+    top: 60px;
+    left: 0;
   }
 
-  /* Menampilkan menu ketika tombol hamburger diklik */
-  .nav-list1.active {
+  .nav-list.active {
     display: flex;
-  }
-
-  /* Tampilan item menu di dalam dropdown */
-  .nav-list1 li {
-    width: 100%; /* Item menu memenuhi lebar dropdown */
-    text-align: center; /* Menyusun teks di tengah */
-    border-bottom: 1px solid #444; /* Garis pembatas antar item menu */
-  }
-
-  /* Menghilangkan garis pembatas di item terakhir */
-  .nav-list1 li:last-child {
-    border-bottom: none;
-  }
-
-  /* Menampilkan tombol hamburger di layar kecil */
-  .menu-toggle {
-    display: block;
   }
 }
