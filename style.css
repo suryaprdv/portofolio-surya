@@ -825,18 +825,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #003366; /* warna biru */
   color: white;
   padding: 10px 20px;
   position: relative;
   z-index: 2;
 }
 
-/* Judul */
-.header-container h1 {
+/* Header kiri-kanan */
+.header-left h1 {
   font-size: 20px;
   margin: 0;
-  text-align: left;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
 }
 
 /* Tombol Hamburger */
@@ -846,31 +850,43 @@ body {
   border: none;
   color: white;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
+  margin-left: 10px;
 }
 
 /* Nav default desktop */
 nav .nav-list {
   display: flex;
   gap: 20px;
+  margin-left: 20px;
 }
 
 /* Nav responsive (HP) */
 @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   nav .nav-list {
     display: none;
     flex-direction: column;
-    position: absolute;
-    background: #333;
-    top: 60px; /* naikkan agar tidak ketutup gambar */
-    left: 0;
+    background: #003366;
     width: 100%;
-    z-index: 5;
+    padding-left: 20px;
+    padding-bottom: 10px;
   }
 
   nav .nav-list.active {
     display: flex;
   }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
 }
+
