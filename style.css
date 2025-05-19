@@ -822,56 +822,57 @@ body {
       }
 
 /* Header wrapper */
+/* Atur nav list supaya dropdown tampil rapi */
+nav .nav-list {
+  display: none;
+  flex-direction: column;
+  background-color: #003366;
+  position: absolute;
+  top: 60px; /* posisi di bawah header */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* biar terlihat jelas */
+}
+
+nav .nav-list.active {
+  display: flex;
+}
+
+.nav-list li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  background-color: #1a4b7b;
+}
+
+/* Biar header dan tombol hamburger tetap rapi */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
   padding: 10px 20px;
+  background-color: #003366;
+  color: white;
   position: relative;
-  z-index: 2;
+  z-index: 1001;
 }
 
-/* Judul */
-.header-container h1 {
-  font-size: 20px;
-  margin: 0;
-  text-align: left;
-}
-
-/* Tombol Hamburger */
 .menu-toggle {
-  font-size: 28px;
+  font-size: 24px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-}
-
-/* Nav default desktop */
-nav .nav-list {
-  display: flex;
-  gap: 20px;
-}
-
-/* Nav responsive (HP) */
-@media (max-width: 768px) {
-  nav .nav-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background: #333;
-    top: 60px; /* naikkan agar tidak ketutup gambar */
-    left: 0;
-    width: 100%;
-    z-index: 5;
-  }
-
-  nav .nav-list.active {
-    display: flex;
-  }
+  display: block;
 }
