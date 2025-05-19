@@ -466,62 +466,80 @@ form input[type="submit"]:hover {
 }
 /* === CONTACT PAGE STYLING === */
 
+/* === Styling Umum untuk Kontak === */
 #contact1 {
-  padding: 20px;
-  background-color: #f9f9f9;
-  color: #333;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 30px;
+  background-color: #f4f4f4; /* Background abu-abu terang */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Menjaga jarak dengan header */
+  font-family: 'Arial', sans-serif;
 }
 
-/* === Konten Paragraf === */
+/* === Judul Kontak === */
+#contact1 h2 {
+  font-size: 32px;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* === Deskripsi Kontak === */
 #contact1 p {
   font-size: 16px;
-  line-height: 1.6;
-  margin: 10px 0;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* === Kontak Info === */
+/* === Kontak Info Styling === */
+.contact-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
 .contact-info p {
   font-size: 16px;
-  margin: 8px 0;
+  color: #333;
+  line-height: 1.6;
 }
 
-.contact-info strong {
-  color: #003366;
-}
-
-/* === Social Links === */
-.social-links p {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
+/* === Styling Link Sosial Media === */
+.social-links {
+  text-align: center;
 }
 
 .social-links a {
-  color: #003366;
   text-decoration: none;
-  margin-right: 15px;
+  color: #003366;
+  font-weight: 600;
+  margin: 5px 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  text-decoration: underline;
+  color: #ff6600; /* Warna berubah menjadi oranye saat hover */
 }
 
-/* === Responsif Mobile === */
+/* === Responsive Styling untuk Mobile === */
 @media (max-width: 768px) {
   #contact1 {
+    padding: 20px;
+  }
+
+  #contact1 h2 {
+    font-size: 28px;
+  }
+
+  .contact-info {
     padding: 15px;
   }
 
-  .contact-info p,
-  .social-links p {
-    font-size: 14px;
-  }
-
   .social-links a {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
