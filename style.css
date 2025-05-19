@@ -50,24 +50,20 @@ img {
 
 /* === Hamburger Button === */
 .menu-toggle {
+ .menu-toggle {
   font-size: 28px;
-  background-color: white; 
-  color: #003366;
+  background: none;
   border: none;
-  border-radius: 50%; 
-  padding: 10px;
+  color: white;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-  position: absolute; /* Agar posisinya tetap di kanan */
-  right: 20px; /* Menempel ke kanan */
-  top: 50%; /* Vertikal tengah */
-  transform: translateY(-50%); /* Penyesuaian untuk benar-benar di tengah */
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 999;
 }
 
-.menu-toggle:hover {
-  background-color: #ddd;
-  transform: scale(1.1);
+
 
 /* === Nav List Styling (Desktop) === */
 .nav-list {
