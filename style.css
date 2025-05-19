@@ -82,6 +82,7 @@ img {
    display: block;
     right: 15px;  /* mepet kanan */
     top: 15px;
+    position: absolute;
     z-index: 999; /* pastikan tampil di atas */
    
   }
