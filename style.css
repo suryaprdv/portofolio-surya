@@ -875,10 +875,15 @@ nav .nav-list {
   nav .nav-list {
     display: none;
     flex-direction: column;
-    background: #003366;
+    background: #003366; /* Background biru untuk menu */
     width: 100%;
     padding-left: 20px;
     padding-bottom: 10px;
+    position: absolute; /* Agar menu berada di atas konten lainnya */
+    top: 50px; /* Berada di bawah header */
+    left: 0;
+    right: 0;
+    z-index: 5;
   }
 
   nav .nav-list.active {
@@ -889,4 +894,3 @@ nav .nav-list {
     margin: 10px 0;
   }
 }
-
