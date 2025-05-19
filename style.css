@@ -507,16 +507,3 @@ form input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #003366;
-  color: white;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
-  color: #ffcc00; /* Warna saat hover */
-  text-decoration: underline;
-}
