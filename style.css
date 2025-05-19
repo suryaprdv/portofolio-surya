@@ -466,3 +466,64 @@ form input[type="submit"]:hover {
   color: #333;
   margin-bottom: 15px;
 }
+/* === CONTACT PAGE STYLING === */
+#contact1 {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact1 h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact1 p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Contact Info Styling */
+.contact-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e0ecf8;
+  border-left: 5px solid #003366;
+  border-radius: 5px;
+}
+
+/* Social Links Styling */
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #0055a5;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #contact1 {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .contact-info,
+  .social-links {
+    font-size: 15px;
+  }
+}
