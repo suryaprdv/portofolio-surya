@@ -822,57 +822,103 @@ body {
       }
 
 /* Header wrapper */
-/* Atur nav list supaya dropdown tampil rapi */
-nav .nav-list {
-  display: none;
-  flex-direction: column;
-  background-color: #003366;
-  position: absolute;
-  top: 60px; /* posisi di bawah header */
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 10px 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* biar terlihat jelas */
+.header-container {
+  background-color: #003366; /* Warna biru elegan */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-nav .nav-list.active {
+h1 {
+  font-size: 1.8rem;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style-type: none;
   display: flex;
 }
 
 .nav-list li {
-  text-align: center;
-  padding: 10px 0;
+  margin: 0 20px;
 }
 
-.nav-list a {
-  color: white;
+.nav-list li a {
   text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #ffcc00;
+}
+
+/* Tampilan dropdown menu */
+.nav-list li:hover > ul {
   display: block;
-  font-weight: bold;
 }
 
-.nav-list a:hover {
-  background-color: #1a4b7b;
-}
-
-/* Biar header dan tombol hamburger tetap rapi */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+.nav-list ul {
+  display: none;
+  position: absolute;
   background-color: #003366;
-  color: white;
-  position: relative;
-  z-index: 1001;
+  list-style-type: none;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  width: 200px;
 }
 
-.menu-toggle {
-  font-size: 24px;
-  background: none;
-  border: none;
+.nav-list li:hover > ul li {
+  padding: 10px;
+  text-align: left;
+}
+
+.nav-list li:hover > ul li a {
   color: white;
-  cursor: pointer;
-  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .nav-list.active {
+    display: block;
+  }
+
+  .nav-list li a {
+    font-size: 1.5rem;
+  }
 }
