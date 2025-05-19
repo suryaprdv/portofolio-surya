@@ -74,6 +74,7 @@ img {
 }
 
 /* === Responsive (Mobile View) === */
+/* CSS untuk navigasi di mobile */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -82,7 +83,7 @@ img {
   .nav-list {
     display: none;
     flex-direction: column;
-    background-color: black; /* dropdown hitam */
+    background-color: black;
     position: absolute;
     top: 70px;
     right: 20px;
@@ -92,14 +93,11 @@ img {
     z-index: 99;
   }
 
-  .nav-list li {
-    margin: 5px 0;
-  }
-
-  .nav-list.show {
-    display: flex;
+  .nav-list.active {
+    display: flex; /* Menampilkan menu */
   }
 }
+
 
 
 /* Main Content */
