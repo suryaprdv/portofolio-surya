@@ -820,95 +820,58 @@ body {
       .nav-list.active {
         display: flex;
       }
+
 /* Header wrapper */
-/* Header container */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003366; /* Warna latar belakang */
+  background-color: #333;
   color: white;
   padding: 10px 20px;
   position: relative;
   z-index: 2;
 }
 
-/* Untuk header kiri (judul) */
+/* Judul */
 .header-container h1 {
   font-size: 20px;
   margin: 0;
+  text-align: left;
 }
 
-/* Tombol hamburger */
+/* Tombol Hamburger */
 .menu-toggle {
   font-size: 28px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-  margin-left: 10px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 
-/* Menyembunyikan dropdown menu pada awalnya */
+/* Nav default desktop */
 nav .nav-list {
-  display: none; /* Menyembunyikan menu */
-  flex-direction: column;
-  background: #003366;
-  width: 100%;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  position: absolute;
-  top: 50px; /* Posisi dropdown di bawah header */
-  left: 0;
-  right: 0;
-  z-index: 5;
-  border-top: 1px solid white;
+  display: flex;
+  gap: 20px;
 }
 
-/* Menampilkan menu saat tombol hamburger diklik */
-nav .nav-list.active {
-  display: flex; /* Menampilkan menu dropdown */
-}
-
-/* Menata item menu */
-.nav-list li {
-  margin: 10px 0;
-  padding: 10px 0;
-  text-align: center; /* Teks di tengah */
-}
-
-/* Penataan link menu */
-.nav-list a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-/* Efek hover pada link */
-.nav-list a:hover {
-  background-color: #1a4b7b;
-}
-
-/* Media query untuk mobile */
+/* Nav responsive (HP) */
 @media (max-width: 768px) {
-  /* Header container: Mengubah flex-direction jadi kolom di mobile */
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  /* Menjaga tombol hamburger di atas */
-  .menu-toggle {
-    order: 1; /* Tombol hamburger tetap di atas */
-  }
-
-  /* Dropdown menu pada mobile */
   nav .nav-list {
-    display: none; /* Sembunyikan menu pada awalnya */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #333;
+    top: 60px; /* naikkan agar tidak ketutup gambar */
+    left: 0;
+    width: 100%;
+    z-index: 5;
   }
 
   nav .nav-list.active {
-    display: flex; /* Tampilkan menu saat tombol hamburger diklik */
+    display: flex;
   }
 }
