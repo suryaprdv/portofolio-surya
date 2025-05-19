@@ -873,19 +873,38 @@ nav .nav-list {
   }
 
   nav .nav-list {
-    display: none;
+    display: none; /* Sembunyikan menu pada awalnya */
     flex-direction: column;
-    background: #003366;
+    background: #003366; /* Background biru untuk menu */
     width: 100%;
     padding-left: 20px;
     padding-bottom: 10px;
+    position: absolute;
+    top: 50px; /* Posisi dropdown di bawah header */
+    left: 0;
+    right: 0;
+    z-index: 5;
+    border-top: 1px solid white; /* Tambahkan border supaya dropdown terlihat jelas */
   }
 
   nav .nav-list.active {
-    display: flex;
+    display: flex; /* Tampilkan menu saat .active ditambahkan */
   }
 
   .nav-list li {
     margin: 10px 0;
+    padding: 10px 0;
+    text-align: center; /* Teks berada di tengah */
+  }
+
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+
+  .nav-list a:hover {
+    background-color: #1a4b7b; /* Warna hover saat hover di link */
   }
 }
