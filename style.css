@@ -30,37 +30,77 @@ img {
 }
 
 /* Header */
-header {
-  background-color: #171717;
+/* === Header Container Styling === */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #003366; /* biru tua */
+  position: relative;
+  z-index: 10;
+}
+
+/* === Judul Header === */
+.header-container h1 {
+  font-size: 32px;
   color: white;
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
-header h1 {
-  margin-bottom: 10px;
-  font-size: 2rem;
+/* === Hamburger Button === */
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* tampil di mobile */
 }
 
-/* Navigation */
+/* === Nav List Styling (Desktop) === */
 .nav-list {
   display: flex;
-  justify-content: center;
-  list-style: none;
   gap: 20px;
-  margin-top: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-list a {
+.nav-list li a {
+  text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
-.nav-list a:hover {
-  color: #ffd700;
+/* === Responsive (Mobile View) === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: black; /* dropdown hitam */
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: auto;
+    z-index: 99;
+  }
+
+  .nav-list li {
+    margin: 5px 0;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
 }
+
 
 /* Main Content */
 main {
