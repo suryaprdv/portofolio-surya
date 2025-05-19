@@ -54,7 +54,7 @@ img {
   display: none;
   position: absolute;
   right: 20px;
-  top: -3px;
+  top: px;
   z-index: 999;
 }
 
