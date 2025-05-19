@@ -3,16 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
   color: #333;
   line-height: 1.6;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f7f7f7;
 }
 
 a {
@@ -30,27 +28,24 @@ img {
 }
 
 /* Header */
-/* === Header Container Styling === */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
-  background-color: #003366; /* biru tua */
+  padding: 10px;
+  background-color: #003366;
   position: relative;
   z-index: 10;
 }
-/* === Judul Header === */
+
 .header-container h1 {
-  font-size:22px;
+  font-size: 22px;
   color: white;
- margin-left: -5px;
+  margin-left: -5px;
   text-align: left;
 }
 
-/* === Hamburger Button === */
 .menu-toggle {
- .menu-toggle {
   font-size: 28px;
   background: none;
   border: none;
@@ -63,9 +58,6 @@ img {
   z-index: 999;
 }
 
-
-
-/* === Nav List Styling (Desktop) === */
 .nav-list {
   display: flex;
   gap: 20px;
@@ -75,19 +67,16 @@ img {
 }
 
 .nav-list li a {
-  text-decoration: none;
   color: white;
   font-weight: 500;
 }
 
-/* === Responsive (Mobile View) === */
-/* CSS untuk navigasi di mobile */
+/* Responsive Nav */
 @media (max-width: 768px) {
-.menu-toggle {
+  .menu-toggle {
     display: block;
   }
 
-  
   .nav-list {
     display: none;
     flex-direction: column;
@@ -97,16 +86,13 @@ img {
     right: 20px;
     padding: 10px 15px;
     border-radius: 5px;
-    width: auto;
     z-index: 99;
   }
 
   .nav-list.active {
-    display: flex; /* Menampilkan menu */
+    display: flex;
   }
 }
-
-
 
 /* Main Content */
 main {
@@ -137,10 +123,8 @@ main {
 .profile-pic {
   max-width: 200px;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Projects */
@@ -151,7 +135,7 @@ main {
 }
 
 .project {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -199,14 +183,14 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive */
+/* Responsive Base */
 @media (max-width: 600px) {
   .nav-list {
     flex-direction: column;
     gap: 10px;
   }
 
-  header h1 {
+  .header-container h1 {
     font-size: 1.5rem;
   }
 
@@ -257,7 +241,7 @@ footer {
   text-decoration: none;
   font-weight: 600;
   margin-top: 20px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -304,7 +288,7 @@ footer {
   text-align: center;
   max-width: 450px;
   flex-basis: 45%;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .intro-box h2 {
@@ -327,7 +311,7 @@ footer {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .intro-box a:hover {
@@ -401,13 +385,13 @@ footer {
 
 #contact a {
   color: #0056b3;
-  text-decoration: none;
 }
 
 #contact a:hover {
   text-decoration: underline;
 }
 
+/* Contact Form */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -441,7 +425,7 @@ form input[type="submit"]:hover {
   background: #004080;
 }
 
-/* Web Projects */
+/* Web Projects Section */
 #web-projects {
   background-color: #f8f9fa;
   padding: 50px 20px;
@@ -463,91 +447,4 @@ form input[type="submit"]:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px 0;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#web-projects h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-/* === CONTACT PAGE STYLING === */
-
-/* === Styling Umum untuk Kontak === */
-#contact1 {
-  padding: 30px;
-  background-color: #f4f4f4; /* Background abu-abu terang */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 50px; /* Menjaga jarak dengan header */
-  font-family: 'Arial', sans-serif;
-}
-
-/* === Judul Kontak === */
-#contact1 h2 {
-  font-size: 32px;
-  color: #003366;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* === Deskripsi Kontak === */
-#contact1 p {
-  font-size: 16px;
-  color: #666;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* === Kontak Info Styling === */
-.contact-info {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.contact-info p {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* === Styling Link Sosial Media === */
-.social-links {
-  text-align: center;
-}
-
-.social-links a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: 600;
-  margin: 5px 15px;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #ff6600; /* Warna berubah menjadi oranye saat hover */
-}
-
-/* === Responsive Styling untuk Mobile === */
-@media (max-width: 768px) {
-  #contact1 {
-    padding: 20px;
-  }
-
-  #contact1 h2 {
-    font-size: 28px;
-  }
-
-  .contact-info {
-    padding: 15px;
-  }
-
-  .social-links a {
-    font-size: 16px;
-  }
 }
