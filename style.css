@@ -449,74 +449,71 @@ form input[type="submit"]:hover {
   margin: 20px 0;
 }  
 /* Contact Section */
-#contact1 {
-  background-color: #ffffff; /* Background putih agar kontras dengan halaman */
-  padding: 40px; /* Menambahkan padding lebih banyak untuk ruang yang lebih luas */
-  margin-top: 50px; /* Memberi jarak lebih dengan elemen lain di atasnya */
-  border-radius: 15px; /* Sudut yang lebih lembut */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut dengan lebih banyak kedalaman */
-  max-width: 1000px; /* Memperlebar lebar max */
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1; /* Memastikan contact section berada di atas elemen lainnya */
+ /* Contact Section */
+  #contact1 {
+    padding: 20px; /* Kurangi padding untuk layar lebih kecil */
+    margin-top: 30px;
+    border-radius: 10px; /* Sudut lebih kecil */
+  }
+
+  /* Heading Contact */
+  #contact1 h2 {
+    font-size: 22px; /* Menyesuaikan ukuran font judul */
+    margin-bottom: 15px;
+  }
+
+  /* Text Penjelasan */
+  #contact1 p {
+    font-size: 16px; /* Ukuran font lebih kecil */
+    margin-bottom: 20px; /* Jarak yang lebih rapat */
+  }
+
+  /* Kontak Info */
+  .contact-info {
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 25px; /* Jarak lebih kecil */
+  }
+
+  .contact-info p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  /* Social Links */
+  .social-links {
+    margin-top: 15px;
+  }
+
+  .social-links a {
+    font-size: 16px; /* Ukuran font lebih kecil */
+    margin: 0 12px;
+  }
+
+  .social-links a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+
+  /* Footer */
+  footer {
+    padding: 15px 0;
+    font-size: 14px;
+  }
 }
 
-/* Heading Contact */
-#contact1 h2 {
-  font-size: 24px;
-  color: #003366; /* Warna judul */
-  margin-bottom: 20px;
-  font-weight: 600; /* Memberi ketegasan pada judul */
-  text-align: center;
-}
+/* For very small screens (like some smartphones) */
+@media (max-width: 480px) {
+  /* Konten Info dan Social Links lebih rapat */
+  .contact-info p, .social-links p {
+    font-size: 14px; /* Lebih kecil agar muat di layar kecil */
+  }
 
-/* Text untuk penjelasan contact */
-#contact1 p {
-  font-size: 18px;
-  line-height: 1.8; /* Menambah spasi antar baris */
-  color: #333;
-  margin-bottom: 30px; /* Jarak lebih besar antara paragraf dan div kontak */
-  text-align: center;
+  .social-links a {
+    font-size: 14px; /* Font lebih kecil */
+    margin: 0 10px;
+  }
 }
-
-/* Kontak Info (Alamat, Email, dan Telepon) */
-.contact-info {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #f4f4f4; /* Background abu-abu untuk info kontak */
-  border-radius: 10px;
-}
-
-.contact-info p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #555;
-}
-
-.contact-info strong {
-  color: #003366; /* Warna biru pada label */
-}
-
-/* Social Links */
-.social-links {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.social-links p {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.social-links a {
-  color: #003366;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-}
-
-.social-links a:hover {
   color: #ffcc00; /* Warna saat hover */
   text-decoration: underline;
 }
