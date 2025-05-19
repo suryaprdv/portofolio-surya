@@ -44,7 +44,7 @@ img {
 .header-container h1 {
   font-size:25px;
   color: white;
-  margin: 0;
+ margin-left: -5px;
   text-align: left;
 }
 
