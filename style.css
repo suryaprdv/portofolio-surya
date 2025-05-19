@@ -77,10 +77,13 @@ img {
 /* === Responsive (Mobile View) === */
 /* CSS untuk navigasi di mobile */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+ .menu-toggle {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
 
+  
 
   .nav-list {
     display: none;
