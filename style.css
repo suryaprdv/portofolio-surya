@@ -448,72 +448,75 @@ form input[type="submit"]:hover {
   padding: 20px;
   margin: 20px 0;
 }  
-/* Contact Section */
- /* Contact Section */
-  #contact1 {
-    padding: 20px; /* Kurangi padding untuk layar lebih kecil */
-    margin-top: 30px;
-    border-radius: 10px; /* Sudut lebih kecil */
-  }
-
-  /* Heading Contact */
-  #contact1 h2 {
-    font-size: 22px; /* Menyesuaikan ukuran font judul */
-    margin-bottom: 15px;
-  }
-
-  /* Text Penjelasan */
-  #contact1 p {
-    font-size: 16px; /* Ukuran font lebih kecil */
-    margin-bottom: 20px; /* Jarak yang lebih rapat */
-  }
-
-  /* Kontak Info */
-  .contact-info {
-    padding: 15px;
-    background-color: #f4f4f4;
-    margin-bottom: 25px; /* Jarak lebih kecil */
-  }
-
-  .contact-info p {
-    font-size: 16px;
-    margin: 8px 0;
-  }
-
-  /* Social Links */
-  .social-links {
-    margin-top: 15px;
-  }
-
-  .social-links a {
-    font-size: 16px; /* Ukuran font lebih kecil */
-    margin: 0 12px;
-  }
-
-  .social-links a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-  }
-
-  /* Footer */
-  footer {
-    padding: 15px 0;
-    font-size: 14px;
-  }
+/* Kontainer Kontak */
+#contact1 {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  box-sizing: border-box;
 }
 
-/* For very small screens (like some smartphones) */
-@media (max-width: 480px) {
-  /* Konten Info dan Social Links lebih rapat */
-  .contact-info p, .social-links p {
-    font-size: 14px; /* Lebih kecil agar muat di layar kecil */
-  }
-
-  .social-links a {
-    font-size: 14px; /* Font lebih kecil */
-    margin: 0 10px;
-  }
+/* Judul Contact */
+#contact1 h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #003366;
+  text-align: center;
 }
+
+/* Deskripsi */
+#contact1 p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Informasi Kontak */
+.contact-info {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+/* Link Sosial */
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #003366;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #ff9900;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
   color: #ffcc00; /* Warna saat hover */
   text-decoration: underline;
 }
