@@ -450,53 +450,73 @@ form input[type="submit"]:hover {
 }  
 /* Contact Section */
 #contact1 {
-  background-color: #ffffff; /* Latar belakang putih agar kontras dengan halaman */
-  padding: 30px;
-  margin-top: 30px;
-  border-radius: 10px; /* Sudut yang lebih lembut */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk efek kedalaman */
-  max-width: 900px;
+  background-color: #ffffff; /* Background putih agar kontras dengan halaman */
+  padding: 40px; /* Menambahkan padding lebih banyak untuk ruang yang lebih luas */
+  margin-top: 50px; /* Memberi jarak lebih dengan elemen lain di atasnya */
+  border-radius: 15px; /* Sudut yang lebih lembut */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut dengan lebih banyak kedalaman */
+  max-width: 1000px; /* Memperlebar lebar max */
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1; /* Memastikan contact section berada di atas elemen lainnya */
 }
 
 /* Heading Contact */
-#contact1 p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
+#contact1 h2 {
+  font-size: 24px;
+  color: #003366; /* Warna judul */
   margin-bottom: 20px;
+  font-weight: 600; /* Memberi ketegasan pada judul */
+  text-align: center;
 }
 
-#contact1 .contact-info p {
-  font-size: 16px;
+/* Text untuk penjelasan contact */
+#contact1 p {
+  font-size: 18px;
+  line-height: 1.8; /* Menambah spasi antar baris */
+  color: #333;
+  margin-bottom: 30px; /* Jarak lebih besar antara paragraf dan div kontak */
+  text-align: center;
+}
+
+/* Kontak Info (Alamat, Email, dan Telepon) */
+.contact-info {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Background abu-abu untuk info kontak */
+  border-radius: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
   margin: 10px 0;
   color: #555;
 }
 
-#contact1 .contact-info strong {
-  color: #003366; /* Warna untuk label yang lebih tegas */
+.contact-info strong {
+  color: #003366; /* Warna biru pada label */
 }
 
 /* Social Links */
 .social-links {
   margin-top: 20px;
+  text-align: center;
 }
 
 .social-links p {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .social-links a {
-  color: #003366; /* Warna biru untuk link */
+  color: #003366;
   text-decoration: none;
-  margin-right: 15px;
-  font-size: 16px;
+  margin: 0 15px;
+  font-size: 18px;
 }
 
 .social-links a:hover {
-  color: #ffcc00; /* Warna saat hover di link */
+  color: #ffcc00; /* Warna saat hover */
   text-decoration: underline;
 }
-
