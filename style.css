@@ -447,4 +447,56 @@ form input[type="submit"]:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px 0;
+}  
+/* Contact Section */
+#contact1 {
+  background-color: #ffffff; /* Latar belakang putih agar kontras dengan halaman */
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px; /* Sudut yang lebih lembut */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk efek kedalaman */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* Heading Contact */
+#contact1 p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#contact1 .contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+#contact1 .contact-info strong {
+  color: #003366; /* Warna untuk label yang lebih tegas */
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #003366; /* Warna biru untuk link */
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.social-links a:hover {
+  color: #ffcc00; /* Warna saat hover di link */
+  text-decoration: underline;
+}
+
