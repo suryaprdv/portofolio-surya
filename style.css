@@ -40,10 +40,6 @@ img {
   position: relative;
   z-index: 10;
 }
-@media (max-width: 768px) {
-  .header-container h1 {
-    font-size: 26px;
-
 /* === Judul Header === */
 .header-container h1 {
   font-size: 29px;
