@@ -453,6 +453,7 @@ form input[type="submit"]:hover {
   max-width: 900px;
   margin: 10px auto 40px;
   padding: 30px 20px;
+  padding-top: 80px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
