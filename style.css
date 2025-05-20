@@ -451,7 +451,7 @@ form input[type="submit"]:hover {
 /* Kontainer Kontak */
 #contact1 {
   max-width: 900px;
-  margin: 60px auto 40px; /* Atas 100px, Bawah 40px */
+  margin: 10px auto 40px;
   padding: 30px 20px;
   background-color: #ffffff;
   border-radius: 12px;
@@ -461,11 +461,12 @@ form input[type="submit"]:hover {
 }
 
 /* Judul Contact */
-#contact1 h2 {
+#contact1 h2, h2 {
   font-size: 28px;
   margin-bottom: 20px;
   color: #003366;
   text-align: center;
+  margin-top: 0;
 }
 
 /* Deskripsi */
