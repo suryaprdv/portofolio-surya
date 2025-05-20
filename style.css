@@ -451,7 +451,7 @@ form input[type="submit"]:hover {
 /* Kontainer Kontak */
 #contact1 {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 100px auto 40px; /* Atas 100px, Bawah 40px */
   padding: 30px 20px;
   background-color: #ffffff;
   border-radius: 12px;
@@ -506,4 +506,3 @@ form input[type="submit"]:hover {
   color: #ff9900;
   text-decoration: underline;
 }
-
